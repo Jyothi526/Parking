@@ -1,0 +1,51 @@
+.Whole {
+    background-image: url("../images/vehicles.jpg");
+    background-size: cover;
+    height: 657px;
+    background-repeat: no-repeat; 
+} 
+  
+.left{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    align-items: center;
+}
+  
+.right{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: -38.5%;
+}
+.d1{
+    border : 2px solid  rgb(237, 100, 230);
+    height: 25%;
+    width: 100%;
+    background-color: rgb(237, 100, 230);
+}
+.d2{
+    border : 2px solid  rgb(80, 156, 255);
+    height: 25%;
+    width: 100%;
+    background-color: rgb(80, 156, 255);
+}
+
+.button{
+    width: 20%;
+    margin-left: 23%;
+    margin-top: 1%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(175, 16, 16);
+    color: white;
+   }
+   .button:hover{
+    background:lightgreen;
+    color: black;
+  }

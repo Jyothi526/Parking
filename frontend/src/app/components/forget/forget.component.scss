@@ -1,0 +1,44 @@
+.forget-page {
+    background-image: url("../images/forgot_password.png");
+    //background-size: cover;
+    height:600px;
+    width: 95%;
+    border: 2px solid white;
+    background-repeat: no-repeat;
+  }
+  .form {
+      width: 50%;
+      height: auto;
+      border: 2px solid red;
+      margin-left: 30%;
+      margin-top: 5%;
+      padding-left: 5%;
+      padding-top: 15px;
+      box-shadow: 2px 2px 2px 2px red;
+      border-radius: 30px;
+  }
+
+  .button{
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .button:hover{
+    background:lightgreen;
+    color: black;
+  }
+   
+  .heading {
+    color: white;
+    background-color : red;
+    size: 60px;
+    margin-left: 43%;
+    margin-top: 5%;
+    padding-left:45px;
+    border-radius: 30px;
+    width: 25%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+  }

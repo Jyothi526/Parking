@@ -1,0 +1,49 @@
+    .body{
+        background-image: url("../images/adminimage1.jpg");
+        background-size: cover;
+        height: 657px;
+        background-repeat: no-repeat;
+        
+      }
+  
+   .container2{
+     display: flex;
+     border-style: groove;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding-bottom: 3%;
+     padding-top: 5%;
+     margin : 100px 10px 10px 460px;
+     border-radius: 30px;
+     width: 40%;
+     height: 30%;
+     text-align: center;
+   }
+
+   .field{
+        width: auto;
+        padding: 5px;
+   }
+
+   .button{
+    margin : 120px 10px 10px -500px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+   }
+   .button:hover{
+    background:lightgreen;
+    color: black;
+  }
+   .m1 {
+    color: black;
+    margin-top: 35%;
+    margin-left: -60%;
+    width: 40%;
+  }
+
+  .m2{
+    margin-top: 35%;
+    margin-left:-10%;
+  }

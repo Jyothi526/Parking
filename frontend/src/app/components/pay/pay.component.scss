@@ -1,0 +1,40 @@
+.division{
+    background-size: cover;
+    background-image: url("../images/pt.jpg");
+    height: 655px;
+    background-repeat: no-repeat;
+   }
+   .container{
+     text-align: center;
+     display: flex;
+     border-style: groove;
+     flex-wrap:wrap;
+     margin-top: 10%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     margin-left: 30%;
+     margin-right: 20%;
+     border-radius: 20px;
+     box-shadow: 5px 5px 5px 5px #000;
+     flex-direction: column;
+     width: 40%;
+     height: 35%;
+     border: 1px solid #ddd;
+   }
+
+   .input{
+     padding: 4px;
+     margin-left: 10px;
+   }
+
+   .btn{
+    margin : 150px 10px 10px -500px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+   }
+   .btn:hover{
+    background:lightgreen;
+    color: black;
+  }
