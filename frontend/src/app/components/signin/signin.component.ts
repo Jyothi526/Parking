@@ -11,7 +11,7 @@ export class SigninComponent implements OnInit {
   constructor(private issueService : IssueService) { }
 
   ngOnInit(): void {
-    this.issueService.getIssues().subscribe((issues) => {
+    this.issueService.getUsers().subscribe((issues) => {
       console.log(issues);
     });
   }

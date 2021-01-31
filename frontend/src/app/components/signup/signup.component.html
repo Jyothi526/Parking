@@ -1,35 +1,45 @@
 <div class="division"> 
+  <form [formGroup]="createForm" class="form">
     <h1 style="color: black; width: 30%;margin-left: 35%;padding-top: 5px;"><b>USER REGISTRATION</b></h1>
     <div class="container">
-  <h3 style="color: red">Enter Username:<input type="text" placeholder="Enter Your Name" class="input"></h3>
-  <h3 style="color: red">Enter Email Id:<input type="text" placeholder="Enter mail id" class="input"></h3>
-  <h3 style="color: red">Enter Password:<input type="password" placeholder="Enter password" class="input"></h3>
-  <h3 style="color: red">Confirm Password:<input type="password" placeholder="Enter password again" class="input"></h3>
-  <h3 style="color: red">Gender :</h3>
-  <input type="radio" id="male" name="gender" value="male">
+  <h3 style="color: red">Enter Username:<input type="text" placeholder="Enter Your Name" class="input" formControlName="name" #name></h3>
+  <h3 style="color: red">Enter Email Id:<input type="text" placeholder="Enter mail id" class="input" formControlName="mail" #mail></h3>
+  <h3 style="color: red">Enter Password:<input type="password" placeholder="Enter password" class="input" formControlName="password" #password></h3>
+  <!-- <h3 style="color: red">Confirm Password:<input type="password" placeholder="Enter password again" class="input" formControlName="mail"#mail></h3> -->
+  <!-- <h3 style="color: red">Gender :</h3> -->
+  <!-- <input type="radio" id="male" name="gender" value="male">
 <label for="male">Male</label>
 <input type="radio" id="female" name="gender" value="female">
 <label for="female">Female</label>
 <input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
-  <h3 style="color: red">Enter Aadhar Number:<input type="text" placeholder="Enter Aadhar Number" class="input"></h3>
-  <h3 style="color: red">Driving License:<input type="text" placeholder="Enter Driving License" class="input"></h3>
-  <h3 style="color: red">Enter Phone number:<input type="text" placeholder="Enter Phone number" class="input"></h3>
+<label for="other">Other</label> -->
+<mat-radio-group  aria-label="gender" style="color: red;" formControlName="gender" #gender>
+          
+  Gender :  <mat-radio-button  value="male" >Male</mat-radio-button> 
+   <mat-radio-button value="female">Female</mat-radio-button>
+  <mat-radio-button value="others">others</mat-radio-button>
+
+</mat-radio-group><br><br>
+  <h3 style="color: red">Enter Aadhar Number:<input type="text" placeholder="Enter Aadhar Number" class="input" formControlName="aadhar" #aadhar></h3>
+  <h3 style="color: red">Driving License:<input type="text" placeholder="Enter Driving License" class="input" formControlName="license" #license></h3>
+  <h3 style="color: red">Enter Phone number:<input type="text" placeholder="Enter Phone number" class="input" formControlName="phoneno" #phoneno></h3>
   <label for="cars">Select Security Question:</label>
-<select name="ques" id="ques" style="padding: 5px;">
+<select name="ques" id="ques" style="padding: 5px;" formControlName="securityqun" #securityqun>
   <option value="1">what is your favourite color?</option>
   <option value="2">who is your childhood favourite hero?</option>
   <option value="3">what is your favourite pet?</option>
   <option value="4">what is your favourite game?</option>
   <option value="5">what is your pet name?</option>
 </select><br>
-  <h3 style="color: red">Enter your answer:<input type="text" placeholder="Enter Your Name" class="input"></h3>
+  <h3 style="color: red">Enter your answer:<input type="text" placeholder="Enter Your Name" class="input" formControlName="securityans" #securityans></h3>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
 <label for="vehicle2">I agree to the terms & conditions.</label><br>
   
                 
-  <a href="../signin">  <button type="button" class="btn" style="color: black">SUBMIT</button></a>
+  <!-- <a href="../signin">  <button type="button" class="btn" style="color: black">SUBMIT</button></a> -->
+  <button  type="submit" (click)="addUser(name.value,mail.value,password.value,gender.value,aadhar.value,license.value,phoneno.value,securityqun.value,securityans.value)"  color="primary" class="btn">SIGN UP</button>
 </div>
+</form>
 </div>
 
 
